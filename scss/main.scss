@@ -1,0 +1,48 @@
+$t-white: white;
+$t-skyblue: #3BB0F5;
+$gray: #828383;
+$boton: 20px;
+
+header{
+	.navbar{
+		padding: 0% 5%;
+		background-color: white;
+	}
+	.logo{
+		width: 180px;
+		height: 35px;
+		margin: 4% 0%;
+	}
+}
+
+.b-food{
+	width: 100%;
+	background-size:cover;
+	background-image: url("../images/food.jpg");
+	color: $t-white;
+	.opaco{
+		background-color: rgba(0, 0, 0, 0.43);
+		padding: 8% 5%;
+		.sublime{
+			position: absolute;
+		}
+		p{
+			margin: 4% 0%;
+		}
+		.btn-info{
+			border-radius: $boton;
+			padding: 2% 4%;
+			font-weight: bold;
+			&:hover{
+				background-color: transparent;
+				color: $t-skyblue;
+			}
+		}
+		.botones{
+			margin-bottom: 4%;
+		}
+		span{
+			margin: 0% 2%;
+		}
+	}
+}

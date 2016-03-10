@@ -1,0 +1,33 @@
+header .navbar {
+  padding: 0% 5%;
+  background-color: white; }
+header .logo {
+  width: 180px;
+  height: 35px;
+  margin: 4% 0%; }
+
+.b-food {
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/food.jpg");
+  color: white; }
+  .b-food .opaco {
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 8% 5%; }
+    .b-food .opaco .sublime {
+      position: absolute; }
+    .b-food .opaco p {
+      margin: 4% 0%; }
+    .b-food .opaco .btn-info {
+      border-radius: 20px;
+      padding: 2% 4%;
+      font-weight: bold; }
+      .b-food .opaco .btn-info:hover {
+        background-color: transparent;
+        color: #3BB0F5; }
+    .b-food .opaco .botones {
+      margin-bottom: 4%; }
+    .b-food .opaco span {
+      margin: 0% 2%; }
+
+/*# sourceMappingURL=main.css.map */
