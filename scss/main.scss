@@ -2,6 +2,13 @@ $t-white: white;
 $t-skyblue: #3BB0F5;
 $gray: #828383;
 $boton: 20px;
+$width: 100%;
+$margin: 4% 0%;
+$f-size: 0.9em;
+@mixin size ($size){
+	width: ($size);
+	height: ($size);
+}
 
 header{
 	.navbar{
@@ -11,23 +18,37 @@ header{
 	.logo{
 		width: 180px;
 		height: 35px;
-		margin: 4% 0%;
+		margin: $margin;
+	}	
+	.navbar-default .navbar-nav>li>a:hover{
+		background-color: $gray;
+		color: $t-white;
+		font-weight: bold;
 	}
 }
 
 .b-food{
-	width: 100%;
+	width: $width;
 	background-size:cover;
 	background-image: url("../images/food.jpg");
 	color: $t-white;
+	@media (max-width: 600px){
+		margin-top: 10%;
+	}
 	.opaco{
 		background-color: rgba(0, 0, 0, 0.43);
 		padding: 8% 5%;
 		.sublime{
 			position: absolute;
+			background-color: #CFCFCF;
+			left: -10%;
+			@media (max-width: 600px){
+				left: -5%;
+				top: -8%;
+			}
 		}
 		p{
-			margin: 4% 0%;
+			margin: $margin;
 		}
 		.btn-info{
 			border-radius: $boton;
@@ -46,3 +67,84 @@ header{
 		}
 	}
 }
+
+.optimize{
+	margin: $margin;
+	color: $gray;
+	.phone{
+		width: $width;
+	}
+	a{
+		color: $t-skyblue;
+		font-weight: bold;
+	}
+	.caja{
+		padding: 0% 4% 0% 2%;
+		font-size: $f-size;
+		button{
+			border-radius: $boton;
+			color: $t-skyblue;
+			border: 1px solid $t-skyblue;
+			font-weight: bold;
+			padding: 2% 4%;
+			&:hover{
+				background-color: transparent;
+			}
+		}
+		p{
+			margin: $margin;
+		}
+	}
+}
+	
+.recreate{
+	margin: $margin;
+	background-color: #F6F6F6;
+	color: $gray;
+	p{
+		font-size: $f-size;
+	}
+	.contenido{
+		padding: 0% 8%;
+	}
+	.box{
+		margin: $margin;
+	}
+	.fila{
+		margin: $margin; 
+		.phone{
+			width: $width;
+		}
+	}
+}
+
+footer{
+	.redes{
+		display: inline-block;
+		padding: 1%;
+		border: 1px solid $t-skyblue;
+		border-radius: 50%;
+		color: $t-skyblue;
+		@include size(35px);
+		&:hover{
+			color: $t-white;
+			background-color: $t-skyblue;
+		}
+		i{
+			position: relative;
+			bottom: 5px;
+			@media (max-width: 600px){
+				top: 2px;
+			}
+		}
+	}
+	p{
+		font-size: $f-size;
+		margin: 1% 0%;
+		a{
+			color: $t-skyblue;
+			font-weight: bold;
+		}
+	}
+}
+

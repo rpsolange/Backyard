@@ -5,17 +5,30 @@ header .logo {
   width: 180px;
   height: 35px;
   margin: 4% 0%; }
+header .navbar-default .navbar-nav > li > a:hover {
+  background-color: #828383;
+  color: white;
+  font-weight: bold; }
 
 .b-food {
   width: 100%;
   background-size: cover;
   background-image: url("../images/food.jpg");
   color: white; }
+  @media (max-width: 600px) {
+    .b-food {
+      margin-top: 10%; } }
   .b-food .opaco {
     background-color: rgba(0, 0, 0, 0.43);
     padding: 8% 5%; }
     .b-food .opaco .sublime {
-      position: absolute; }
+      position: absolute;
+      background-color: #CFCFCF;
+      left: -10%; }
+      @media (max-width: 600px) {
+        .b-food .opaco .sublime {
+          left: -5%;
+          top: -8%; } }
     .b-food .opaco p {
       margin: 4% 0%; }
     .b-food .opaco .btn-info {
@@ -29,5 +42,66 @@ header .logo {
       margin-bottom: 4%; }
     .b-food .opaco span {
       margin: 0% 2%; }
+
+.optimize {
+  margin: 4% 0%;
+  color: #828383; }
+  .optimize .phone {
+    width: 100%; }
+  .optimize a {
+    color: #3BB0F5;
+    font-weight: bold; }
+  .optimize .caja {
+    padding: 0% 4% 0% 2%;
+    font-size: 0.9em; }
+    .optimize .caja button {
+      border-radius: 20px;
+      color: #3BB0F5;
+      border: 1px solid #3BB0F5;
+      font-weight: bold;
+      padding: 2% 4%; }
+      .optimize .caja button:hover {
+        background-color: transparent; }
+    .optimize .caja p {
+      margin: 4% 0%; }
+
+.recreate {
+  margin: 4% 0%;
+  background-color: #F6F6F6;
+  color: #828383; }
+  .recreate p {
+    font-size: 0.9em; }
+  .recreate .contenido {
+    padding: 0% 8%; }
+  .recreate .box {
+    margin: 4% 0%; }
+  .recreate .fila {
+    margin: 4% 0%; }
+    .recreate .fila .phone {
+      width: 100%; }
+
+footer .redes {
+  display: inline-block;
+  padding: 1%;
+  border: 1px solid #3BB0F5;
+  border-radius: 50%;
+  color: #3BB0F5;
+  width: 35px;
+  height: 35px; }
+  footer .redes:hover {
+    color: white;
+    background-color: #3BB0F5; }
+  footer .redes i {
+    position: relative;
+    bottom: 5px; }
+    @media (max-width: 600px) {
+      footer .redes i {
+        top: 2px; } }
+footer p {
+  font-size: 0.9em;
+  margin: 1% 0%; }
+  footer p a {
+    color: #3BB0F5;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
